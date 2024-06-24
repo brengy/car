@@ -1,0 +1,107 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('kk.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zoomWave 5s infinite; /* Zoom wave animation for the entire body */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for the header */
+}
+
+label, input, button, #statusMessage {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+	border-radius: 30px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for form elements */
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for input and button */
+}
+
+button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.1); /* Scale up the button slightly when hovered over */
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #555;
+    transition: border 0.3s ease; /* Smooth transition for border */
+}
+
+#statusMessage {
+    font-size: 18px;
+    color: #ff0000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid;
+    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
+@keyframes zoomWave {
+    0% {
+    /*    transform: scale(1);  */
+        filter: hue-rotate(0deg);
+    }
+    50% {
+      /*  transform: scale(1.1); */
+        filter: hue-rotate(180deg);
+    }
+    100% {
+      /*  transform: scale(1);  */
+        filter: hue-rotate(360deg);
+    }
+}
+*/

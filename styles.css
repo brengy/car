@@ -1,0 +1,146 @@
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('tt.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    animation: fadeInUp 1s ease-out; /* Apply the animation */
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    animation: fadeInUp 1s ease-out 0.2s; /* Apply the animation with a delay */
+
+}
+
+.header h1 {
+    font-family: 'Shadowed Black', sans-serif;
+   /* color: #203354; /* This line sets the color of "Smart Team" to match the panel color */
+	color: #ABD1F3;
+	opacity:0.2;
+	 animation:  fadeInUp2 1s ease-out 0.8s ; /* Zoom wave animation for the entire body */
+opacity:0.75;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: flex-start; /* Use flex-start to align items at the top */
+    justify-content: space-between; /* Align panels to the left and right */
+    animation: fadeInUp 1s ease-out 0.4s; /* Apply the animation with a delay */
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #203354;
+    border-radius: 10px;
+    margin: 20px;
+    height: 300px;
+    animation: fadeInUp 1s ease-out 0.6s; /* Apply the animation with a delay */
+}
+
+.option {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 10px;
+}
+
+.option img {
+    width: 90px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.equal-button {
+    width: 120px; /* Set a fixed width for all buttons */
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    animation: fadeInUp 1s ease-out 0.8s; /* Apply the animation with a delay */
+}
+
+.equal-button:hover {
+    background-color: #555;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeInUp 1s ease-out 1s; /* Apply the animation with a delay */
+}
+
+.footer button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #555;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.center-textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* Animation keyframes */
+@keyframes fadeInUp2 {
+    0% {
+        opacity: 0;
+     
+    }25% {
+        opacity: 0.25;
+       
+    }50% {
+        opacity: 0.5;
+       
+    }75% {
+        opacity: 0.75;
+       
+    }
+	
+    100% {
+        opacity: 1;
+	
+    }
+}

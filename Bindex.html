@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Background Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            background: black; /* Fallback color for smoother transition */
+        }
+        .bg {
+            /* The image used */
+            background-image: url('tt.gif');
+            
+            /* Full height */
+            height: 100%; 
+            width: 100%;
+            
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            z-index: -1;
+        }
+        .container {
+            text-align: center;
+            z-index: 1;
+        }
+        .fade-out {
+            animation: fadeOut 5.8s forwards;
+        }
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var audio = new Audio('load.mp3');
+            audio.play();
+            
+            setTimeout(function() {
+                document.body.classList.add('fade-out');
+            }, 0); // Start fade out immediately
+
+            setTimeout(function() {
+                window.location.href = 'network.html';
+            }, 5800); // Redirect after 2.8 seconds
+        }
+    </script>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="container">
+        <h1></h1>
+       
+    </div>
+</body>
+</html>

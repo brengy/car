@@ -1,0 +1,126 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('tt.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: #203354;
+    border-radius: 10px;
+    margin: 20px;
+    animation: fadeInUp 1s ease-out; /* Initial fade-in animation */
+}
+
+.monitor-button {
+    width: 200px;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.monitor-button:hover {
+    background-color: #555;
+}
+
+.monitor-label {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.move-left {
+    animation: moveToLeft 1s forwards;
+}
+
+.move-right {
+    animation: moveToRight 1s forwards;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    position: fixed; /* Change position to fixed */
+    bottom: 0;
+    left: 0; /* Ensure it starts from the left edge */
+    width: 100%; /* Span the entire width */
+	  max-width: 100%;
+    animation: fadeInUp 1s ease-out 1s; /* Apply the animation with a delay */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.footer button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #555;
+}
+
+#messages {
+    margin-top: 20px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message {
+    margin: 5px 0;
+}

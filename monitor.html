@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor</title>
+    <link rel="stylesheet" href="monitor.css">
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+	
+</head>
+<body>
+    <div class="container">
+        <div id="voltPanel" class="panel">
+            <button id="voltButton" class="monitor-button">Get Voltage</button>
+            <label id="voltLabel" class="monitor-label">Voltage: </label>
+        </div>
+        <div id="tempPanel" class="panel">
+            <button id="tempButton" class="monitor-button">Get Temp</button>
+            <label id="tempLabel" class="monitor-label">Temperature: </label>
+        </div>
+    </div>
+    <div class="footer">
+        <button id="mainButton">Main</button>
+        <button id="monitorButton">Monitor</button>
+        <button id="gpsButton">GPS</button>
+        <button id="networkButton">Network</button>
+        <button id="aboutButton">About</button>
+    </div>
+    <div id="messages"></div>
+    <script src="monitor.js"></script>
+</body>
+</html>

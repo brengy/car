@@ -1,0 +1,106 @@
+
+body, html {
+    background: url('tnt.jpg') no-repeat center center fixed;
+    animation: zoomWave 5s infinite, fadeInUp 1s ease-out 0.6s; /* Zoom wave animation for the entire body */
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items:  flex-start;
+    
+  
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:  center; 
+	margin-top: 0px;
+	
+ /*   animation: zoomWave 5s infinite; /* Zoom wave animation for the container */
+}
+
+.panel {
+    margin: 20px;
+    padding:  30px;
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the panel */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zoomWave2 5s infinite; /* Zoom wave animation for the panel */
+	
+}
+
+.animated-button {
+    padding: 15px 30px;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+
+.animated-button:hover {
+    background-color: #555;
+    transform: scale(1.1); /* Scale up the button slightly when hovered over */
+}
+
+/* Animation keyframes */
+@keyframes zoomWave {
+    0% {
+      /*  transform: scale(1);  */
+        filter: hue-rotate(0deg);
+    }
+    50% {
+      /*  transform: scale(1.1);  */
+        filter: hue-rotate(180deg);
+    }
+    100% {
+   /*    transform: scale(1);  */
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Animation keyframes */
+@keyframes zoomWave2 {
+    0% {
+        transform: scale(1); 
+      /*  filter: hue-rotate(0deg);  */
+    }
+    50% {
+        transform: scale(1.1); 
+     /*   filter: hue-rotate(180deg);  */
+    }
+    100% {
+        transform: scale(1); 
+      /*  filter: hue-rotate(360deg);  */
+    }
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+     
+    }25% {
+        opacity: 0.25;
+       
+    }50% {
+        opacity: 0.5;
+       
+    }75% {
+        opacity: 0.75;
+       
+    }
+	
+    100% {
+        opacity: 1;
+       
+    }
+}

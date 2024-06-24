@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS</title>
+    <link rel="stylesheet" href="gps.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gps-controls">
+            <button id="getLocationButton" class="gps-button">Get Location</button>
+			<label id="gpsLabel" class="gps-label">Location: </label>
+            <a id="locationLink" href="#" target="_blank">View on Google Maps</a>
+        </div>
+    </div>
+    <div class="footer">
+        <button id="mainButton">Main</button>
+        <button id="monitorButton">Monitor</button>
+        <button id="gpsButton">GPS</button>
+        <button id="networkButton">Network</button>
+        <button id="aboutButton">About</button>
+    </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.2.6/mqtt.min.js"></script>
+    <script src="gps.js"></script>
+</body>
+</html>
