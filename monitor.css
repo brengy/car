@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('tt.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%; /* Adjust width for better fit on mobile */
+    max-width: 600px; /* Limit maximum width for larger screens */
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px; /* Reduce padding for more compact layout */
+    background-color: #203354;
+    border-radius: 10px;
+    margin: 10px 0; /* Adjust margin for better spacing */
+    animation: fadeInUp 1s ease-out; /* Initial fade-in animation */
+}
+
+.monitor-button {
+    width: 150px; /* Reduce button width for better fit on mobile */
+    padding: 8px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px; /* Reduce margin for better spacing */
+}
+
+.monitor-button:hover {
+    background-color: #555;
+}
+
+.monitor-label {
+    margin-top: 8px;
+    font-size: 16px; /* Adjust font size for better readability */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    position: fixed; /* Keep fixed position */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    animation: fadeInUp 1s ease-out 1s;
+    box-sizing: border-box;
+}
+
+.footer button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 16px; /* Adjust button padding for better fit */
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #555;
+}
+
+#messages {
+    margin-top: 20px;
+    width: 90%; /* Adjust width for better fit on mobile */
+    max-width: 600px; /* Limit maximum width for larger screens */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px; /* Reduce padding for more compact layout */
+    border-radius: 5px;
+}
+
+.message {
+    margin: 5px 0;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
