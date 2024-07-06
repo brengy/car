@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Car Features</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1></h1>
+        </div>
+        <div class="main">
+            <div class="panel left panel-1">
+                <div class="option">
+                    <img src="trunkoff.png" alt="Trunk Icon">
+                    <button class="equal-button">Trunk OFF</button>
+                </div>
+                <div class="option">
+                    <img src="acoff.png" alt="AC Icon">
+                    <button class="equal-button">AC OFF</button>
+                </div>
+                <div class="option">
+                    <img src="lanternoff.png" alt="Lantern Icon">
+                    <button class="equal-button">Lantern OFF</button>
+                </div>
+                <div class="option">
+                    <img src="bladesoff.png" alt="Wipers Icon">
+                    <button class="equal-button">Blades OFF</button>
+                </div>
+            </div>
+            <div class="panel right panel-1">
+                <div class="option">
+                    <img src="trunkon.png" alt="Trunk Icon">
+                    <button class="equal-button">Trunk ON</button>
+                </div>
+                <div class="option">
+                    <img src="acon.png" alt="AC Icon">
+                    <button class="equal-button">AC ON</button>
+                </div>
+                <div class="option">
+                    <img src="lanternon.png" alt="Lantern Icon">
+                    <button class="equal-button">Lantern ON</button>
+                </div>
+                <div class="option">
+                    <img src="bladeson.png" alt="Wipers Icon">
+                    <button class="equal-button">Blades ON</button>
+                </div>
+            </div>
+            <div class="panel left panel-2" style="display: none;">
+                <div class="option">
+                    <img src="contactoff.png" alt="Motor Icon 1">
+                    <button class="equal-button">Contact OFF</button>
+                </div>
+                <div class="option">
+                    <img src="startoff.png" alt="Motor Icon 2">
+                    <button class="equal-button">Start OFF</button>
+                </div>
+            </div>
+            <div class="panel right panel-2" style="display: none;">
+                <div class="option">
+                    <img src="contacton.png" alt="Motor Icon 3">
+                    <button class="equal-button">Contact ON</button>
+                </div>
+                <div class="option">
+                    <img src="starton.png" alt="Motor Icon 4">
+                    <button class="equal-button">Start ON</button>
+                </div>
+            </div>
+            <div class="panel left panel-3" style="display: none;">
+                <div class="option">
+                    <img src="fueloff.png" alt="Fuel Icon">
+                    <button class="equal-button">Benzene OFF</button>
+                </div>
+                <div class="option">
+                    <img src="immobilizeroff.png" alt="Immobilizer Icon">
+                    <button class="equal-button">Immobilizer OFF</button>
+                </div>
+                <div class="option">
+                    <img src="lockoff.png" alt="Lock Icon">
+                    <button class="equal-button">Lock OFF</button>
+                </div>
+            </div>
+            <div class="panel right panel-3" style="display: none;">
+                <div class="option">
+                    <img src="fuelon.jpg" alt="Fuel Icon">
+                    <button class="equal-button">Benzene ON</button>
+                </div>
+                <div class="option">
+                    <img src="immobilizeron.png" alt="Immobilizer Icon">
+                    <button class="equal-button">Immobilizer ON</button>
+                </div>
+                <div class="option">
+                    <img src="lockon.png" alt="Lock Icon">
+                    <button class="equal-button">Lock ON</button>
+                </div>
+            </div>
+        </div>
+		 <!-- 
+		 <input type="text" id="actionTextBox" readonly style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 200px; text-align: center;">
+         -->
+	   <div class="footer">
+            <button id="motorButton">Motor</button>
+            <button id="safetyButton">Safety</button>
+            <button id="tableauButton">Tableau</button>
+            <button id="monitorButton">Monitor</button>
+            <button id="gpsButton">GPS</button>
+            <button id="networkButton">Network</button>
+            <button id="aboutButton">About</button>
+        </div>
+        
+    </div>
+    <audio id="buttonSound" src="btb.mp3"></audio>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
