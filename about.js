@@ -1,3 +1,11 @@
+
+const buttonClickAudio5 = new Audio('chim.mp3');
+
+document.addEventListener('DOMContentLoaded', function() {
+	buttonClickAudio5.play();
+});
+
+
 const buttonSound = document.getElementById('buttonSound');
 
 function playSound() {
