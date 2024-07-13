@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('bv8.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  /*  display: flex;
+    flex-direction: column; */
+	 margin-top: 0;
+}
+
+.gallery {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Make the gallery scrollable */
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    animation: fadeIn 1s ease-out;
+}
+
+.image-container img {
+    width: 23%;
+    height: 40vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00000e;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeInUp 1s ease-out 1s; /* Apply the animation with a delay */
+}
+
+.footer button {
+    background-color : #6892db;
+    font-weight: bold; /* Make text bold */
+    color:  rgba(255, 255, 228, 1);
+	border-radius: 100px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #555;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
